@@ -6,9 +6,7 @@ const config = {
     options: {}
   },
   staticDirs: ['..\\public'],
-  docs: {
-    autodocs: true
-  },
+  docs: {},
   webpackFinal: (config) => {
     config.resolve.modules.push(`${process.cwd()}/src`)
     return config
