@@ -2,6 +2,7 @@ import React from 'react'
 import GlobalStyles from '../src/styles/global'
 import { ThemeProvider } from 'styled-components'
 import theme from '../src/styles/theme'
+import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
 
 export const decorators = [
   (Story) => (
@@ -12,3 +13,9 @@ export const decorators = [
   )
 ]
 export const tags = ['autodocs']
+
+export const parameters = {
+  viewport: {
+    viewports: INITIAL_VIEWPORTS // Adicione os viewports iniciais
+  }
+}
