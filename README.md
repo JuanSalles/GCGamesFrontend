@@ -31,13 +31,12 @@ Para executar o projeto localmente, siga os passos abaixo:
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/JuanSalles/GCGamesFrontend
+git clone https://github.com/JuanSalles/GCGamesFrontend .
 ```
 
 2. Instale as dependências:
 
 ```bash
-cd GeekCrow-Games
 npm install
 ```
 
