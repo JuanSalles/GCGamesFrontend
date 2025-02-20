@@ -11,6 +11,7 @@ const theme = {
       "Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
     light: 300,
     normal: 400,
+    medium: 500,
     bold: 600,
     sizes: {
       xsmall: '1.2rem',
@@ -29,7 +30,9 @@ const theme = {
     black: '#030517',
     lightGray: '#EAEAEA',
     gray: '#8F8F8F',
-    darkGray: '#2E2F42'
+    darkGray: '#2E2F42',
+    gradientButton: 'linear-gradient(0deg, #FF5F5F 0%, #F062C0 100%)',
+    hoverGrandientButton: 'linear-gradient(0deg, #E35565 0%, #D958A6 100%)'
   },
   spacings: {
     xxsmall: '0.8rem',
