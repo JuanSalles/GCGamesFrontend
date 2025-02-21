@@ -4,7 +4,8 @@ const theme = {
     gutter: '3.2rem'
   },
   border: {
-    radius: '0.4rem'
+    radius: '0.4rem',
+    radiusSmall: '0.2rem'
   },
   font: {
     family:
@@ -25,14 +26,20 @@ const theme = {
   colors: {
     primary: '#F231A5',
     secondary: '#3CD3C1',
+    darkSecondary: '#35BDAC',
     mainBg: '#06092B',
     white: '#FAFAFA',
     black: '#030517',
     lightGray: '#EAEAEA',
     gray: '#8F8F8F',
     darkGray: '#2E2F42',
-    gradientButton: 'linear-gradient(0deg, #FF5F5F 0%, #F062C0 100%)',
-    hoverGrandientButton: 'linear-gradient(0deg, #E35565 0%, #D958A6 100%)'
+    gradientButton:
+      'linear-gradient(180deg, #FF5F5F 0%, #F062C0 33%, #E35565 66%, #D958A6 100%)'
+  },
+  transitions: {
+    default: '0.3s ease-in-out',
+    fast: '0.1s ease-in-out',
+    slow: '0.5s ease-in-out'
   },
   spacings: {
     xxsmall: '0.8rem',

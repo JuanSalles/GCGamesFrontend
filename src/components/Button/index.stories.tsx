@@ -17,3 +17,16 @@ export const Default: StoryObj = {
     children: 'Clicke here'
   }
 }
+
+export const OnlyIcon: StoryObj = {
+  args: {
+    hasCartIcon: true
+  }
+}
+
+export const OnlyIconAlreadyInCart: StoryObj = {
+  args: {
+    hasCartIcon: true,
+    alreadInCart: true
+  }
+}
