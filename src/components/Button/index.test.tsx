@@ -11,9 +11,6 @@ describe('<Button />', () => {
       </Button>
     )
     const element = screen.getByRole('button')
-    expect(element).toHaveStyle({
-      padding: '0.8rem 0.8rem'
-    })
     expect(element).toHaveStyleRule('width', '1.4rem', {
       modifier: 'svg'
     })
@@ -23,9 +20,7 @@ describe('<Button />', () => {
     renderWithTheme(<Button hasCartIcon>Buy now</Button>)
     const element = screen.getByRole('button', { name: /buy now/i })
     expect(element).toHaveStyle({
-      fontSize: '1.4rem',
-      padding: '0.8rem 3.2rem',
-      lineHeight: '2.1rem'
+      'font-size': '1.4rem'
     })
 
     expect(element).toHaveStyleRule('width', '1.8rem', {
@@ -41,9 +36,7 @@ describe('<Button />', () => {
     )
     const element = screen.getByRole('button', { name: /buy now/i })
     expect(element).toHaveStyle({
-      fontSize: '1.6rem',
-      padding: '1.6rem 4.8rem',
-      lineHeight: '2.4rem'
+      'font-size': '1.6rem'
     })
 
     expect(element).toHaveStyleRule('width', '2.0rem', {

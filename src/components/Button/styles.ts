@@ -5,27 +5,27 @@ import { DefaultTheme } from 'styled-components/dist/types'
 export const wrapperModifiers = {
   small: (theme: DefaultTheme, fullWidth: boolean) => css`
     font-size: ${theme.font.sizes.xsmall};
-    line-height: 1.8rem;
-    padding: ${theme.spacings.xxsmall} ${theme.spacings.xxsmall};
+    height: 3rem;
     width: ${fullWidth ? '100%' : 'auto'};
+    padding-inline: ${fullWidth ? '0' : theme.spacings.small};
     svg {
       width: ${theme.font.sizes.small};
     }
   `,
   medium: (theme: DefaultTheme, fullWidth: boolean) => css`
     font-size: ${theme.font.sizes.small};
-    line-height: 2.1rem;
-    padding: ${theme.spacings.xxsmall} ${theme.spacings.medium};
+    height: 4rem;
     width: ${fullWidth ? '100%' : 'auto'};
+    padding-inline: ${fullWidth ? '0' : theme.spacings.small};
     svg {
       width: ${theme.font.sizes.large};
     }
   `,
   large: (theme: DefaultTheme, fullWidth: boolean) => css`
     font-size: ${theme.font.sizes.medium};
-    line-height: 2.4rem;
-    padding: ${theme.spacings.xsmall} ${theme.spacings.xlarge};
+    height: 5rem;
     width: ${fullWidth ? '100%' : 'auto'};
+    padding-inline: ${fullWidth ? '0' : theme.spacings.large};
     svg {
       width: ${theme.font.sizes.xlarge};
     }
