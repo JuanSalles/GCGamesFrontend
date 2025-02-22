@@ -2,7 +2,9 @@ import styled, { css } from 'styled-components'
 import { WishListButtonProps } from '.'
 
 type ComponentProps = Pick<WishListButtonProps, 'onWishList'>
-export const Wrapper = styled.button<ComponentProps>`
+export const Wrapper = styled.button.withConfig({
+  shouldForwardProp: (prop) => !['onWishList'].includes(prop)
+})<ComponentProps>`
   ${({ theme, onWishList }) => css`
     all: unset;
     display: flex;
