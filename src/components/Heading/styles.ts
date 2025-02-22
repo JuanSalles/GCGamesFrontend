@@ -10,7 +10,7 @@ const wrapperModifiers = {
   `,
   lineBottom: (theme: DefaultTheme) => css`
     position: relative;
-    margin-bottom: ${theme.spacings.medium};
+    margin-bottom: ${theme.spacings.small};
     &::after {
       content: '';
       position: absolute;
@@ -27,10 +27,12 @@ export const Wrapper = styled.h2.withConfig({
 })<HeadingProps>`
   ${({ theme, color, lineLeft, lineBottom }) => css`
     font-size: ${theme.font.sizes.xlarge};
+    line-height: ${theme.font.sizes.xlarge};
     color: ${theme.colors[color!]};
     ${media.greaterThan('medium')`
     font-size: ${theme.font.sizes.xxlarge};`}
+    line-height: ${theme.font.sizes.xxlarge};
     ${lineLeft && wrapperModifiers.lineLeft(theme)}
-  ${lineBottom && wrapperModifiers.lineBottom(theme)}
+    ${lineBottom && wrapperModifiers.lineBottom(theme)}
   `}
 `
